@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>string</title>
+</head>
+<body>
+    <script>
+    document.write("<br><br><strong>String functions:</strong>");
+    document.write("<br><br><i>length: Will find length of the string</i><br>")
+    var str="Have a Great day";
+    document.write(str);
+    var s=str.length;
+    document.write("<br>"+s);
+
+    document.write("<br><br><i>toLower(): Connvert to Lowercase</i><br>")
+    var str="Have a Great day";
+    document.write(str);
+    var s=str.toLowerCase();
+    document.write("<br>"+s);
+
+
+    document.write("<br><br><i>toUpper(): Connvert to Uppercase</i><br>")
+    var str="Have a Great day";
+    document.write(str);
+    var s=str.toUpperCase();
+    document.write("<br>"+s);
+
+    document.write("<br><br><i>concat(): combine 2 strings</i><br>")
+    document.write(str);
+    var str1="Hello! ";
+    document.write("<br>"+str1);
+    s=str1.concat(str);
+    document.write("<br>"+s);
+
+
+    document.write("<br><br><i>includes(): </i><br>")
+    document.write(str);
+    s=str.includes("Have");
+    document.write("<br> to see if the word 'Have' is present:<br> "+s);
+
+
+    document.write("<br><br><i>startsWith():</i><br>")
+    document.write(str);
+    s=str.startsWith("Have");
+    document.write("<br> To see if the word starts with 'Have':<br> "+s);
+    s=str.startsWith("a");
+    document.write("<br> To see if the word starts with 'a':<br> "+s);
+
+    document.write("<br><br><i>endsWith(): </i><br>")
+    document.write(str);
+    s=str.endsWith("day");
+    document.write("<br> To see if the word starts with 'day':<br> "+s);
+    s=str.endsWith("Have");
+    document.write("<br> To see if the word starts with 'Have':<br> "+s);
+
+    document.write("<br><br><i>search(): similar to includes but returns position instead of true or false.</i><br>")
+    document.write(str);
+    s=str.search("Great");
+    document.write("<br> To return position of the word 'Great' (includes space):<br> "+s);
+
+
+    document.write("<br><br><i>match(): will collect the word and display as an array.</i><br>")
+    document.write(str);
+    s=str.match(/a/g);
+    document.write("<br>  "+s);
+
+
+    document.write("<br><br><i>charAt(): </i><br>")
+    document.write(str);
+    s=str.charAt(7);
+    document.write("<br> To return character at  position :<br> "+s);
+
+
+    document.write("<br><br><i>charCodeAt(): </i><br>")
+    document.write(str);
+    s=str.charCodeAt(7);
+    document.write("<br> To return code of the character at that position :<br> "+s);
+
+    document.write("<br><br><i>split(): </i><br>")
+    document.write(str);
+    s=str.split("G");
+    document.write("<br> It splits and puts comman in the position :<br> "+s);
+
+
+    document.write("<br><br><i>repeat(): </i><br>")
+    document.write(str);
+    s=str.repeat(5);
+    document.write("<br>"+s);
+
+    document.write("<br><br><i>substring(): </i><br>")
+    document.write(str);
+    s=str.substr(1);
+    document.write("<br>returns from 1st index to end: <br>"+s);
+    s=str.substr(1,7);
+    document.write("<br>returns from 1st index till 7th:<br> "+s);
+   
+
+    document.write("<br><br><i>slice(): </i><br>")
+    document.write(str);
+    s=str.slice(7,16);
+    document.write("<br>"+s);
+   
+    </script>
+    <br>
+<a href="index.html" target="_blank">Back</a>
+<a href="const.html" target="_blank">Next</a>
+
+</body>
+</html>

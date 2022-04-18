@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>javascript concepts</title>
+    
+</head>
+<body>
+    <script>
+        document.write("<strong> Javascript concepts</strong>") // document.write helps us write statements in javascript and this is js accessed in HTML
+        document.write("<br> <br>Javascript can be accessed with <strong>HTML</strong> and <strong>External link</strong> ")  /* we are using tags */
+        document.write("<br><br> <strong>Javascript Variables :</strong>")
+        document.write("<br> They can be of 3 types: var , let and const <br>")
+        document.write("<br> To declare a var: <br>")
+        var a=10;
+        var b="hello";
+        document.write(a);
+        document.write("<br>")
+        document.write(b);
+        document.write("<br><br> To declare a Let: <br>")
+        let c=20;
+        let d="everyone";
+        document.write(c);
+        document.write("<br>")
+        document.write(d);
+        document.write("<br><br> To declare a const: - It's value cannot be changed<br>")
+        const x="This is constant "; 
+        document.write(x);
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<strong>Different datatypes </strong> ")
+        document.write("<br>The different types are: string,number,boolean ,arrays(known as object in js).<br><br> ")
+
+         var s="This is a sentence"
+         document.write(s)
+         document.write("<br>")
+         document.write(typeof s)
+         document.write("<br><br>")
+
+         var a=8989
+         document.write(a)
+         document.write("<br>")
+         document.write(typeof a)
+         document.write("<br><br>")
+
+         var b=true
+         document.write(b)
+         document.write("<br>")
+         document.write(typeof b)
+         document.write("<br><br>")
+       
+         var y
+         document.write(y)
+         document.write("<br>")
+         document.write(typeof y)
+         document.write("<br><br>")
+
+         var z=["orange",12,"blue",5]
+         document.write(z)
+         document.write("<br>")
+         document.write(typeof z) //arrays in JS is called as objects
+         document.write("<br><br>")
+        
+         document.write("><brWe can now see some of the arithmetic operations using looping statements in external js named operators <br><br> ")
+       
+         </script>
+
+         <script src="operators.js"></script>
+
+         <script>
+           document.write("<br> <br><strong> ARRAYS </strong><br>")
+           document.write("<br>Array can be single dimensional or multi-dimensional array:<br>")
+           document.write("<br><br><i>Creating single dimensional array:</i><br>")
+           var arr=["Orange","Apple","banana","Mango","Grapes"]
+           document.write(arr);
+
+           document.write("<br><br><i>Creating multi-dimensional array:</i><br>")
+           var arr0=[["Orange","Apple","banana"],
+                    ["10kg","12kg","14kg"],
+                    ["Bavana","sana","Hitesh"]]
+                    for(var i=0; i<3; i++)
+                   
+                      {document.write(arr0[i] + "<br>");
+                      }
+                
+           document.write("<i>Popping in an array:</i><br>")
+           arr.pop();
+           document.write(arr);
+
+           document.write("<br><br><i>Pushing in an array:</i><br>")
+           arr.push("Pineapple");
+           document.write(arr);
+
+           
+           document.write("<br><br><i>Shifting in an array: (add or remove element from the beginning of the array) </i><br>");
+           let arr1=[1,2,3,4,5]
+           document.write(arr1);
+           arr1.shift();
+           document.write("<br>")
+           arr1.unshift();
+           document.write(arr1);
+
+           document.write("<br><br><i>Slicing in an array:</i><br>")
+           var arr2=[10,15,20,25,35];
+           document.write(arr2);
+           var arr3=arr2.slice(0,2);
+           document.write("<br>")
+           document.write(arr3);
+
+           document.write("<br><br><i>Splicing (inserting or deleting) in an array:</i><br>")
+           var ar=["Hello","Everyone"];
+           document.write(ar);
+           ar.splice(1,0,"Good day");
+           document.write("<br>")
+           document.write("Adding element: "+ar);
+           ar.splice(1,2);
+           document.write("<br>")
+           document.write("Deleting an element: "+ ar);
+    
+           document.write("<br><br><i>Concatinating 2 arrays:</i><br>")
+           document.write(arr1 +"<br>");
+           document.write(arr2);
+           var array=arr1.concat(arr2);
+           document.write("<br>"+ array);
+
+           document.write("<br><br><i>Join 2 arrays: (it will make it as one value)</i><br>")
+           document.write(arr1 +"<br>");
+           document.write(arr2);
+           var a=array.join(" ");
+           document.write("<br>"+ a);
+
+           document.write("<br><br><strong>Array functions:</strong>");
+
+           document.write("<br><br><i>isarrays(): (Will find if the variable is array or not)</i><br>")
+           document.write("For array with value: "+ arr1);
+           var b=Array.isArray(arr1);
+           document.write("<br>"+b);
+           var f=10;
+           document.write("<br>For var with value: "+f);
+           var b=Array.isArray(f);
+           document.write("<br>"+b);
+          
+           document.write("<br><br><i>indexOf(): ( Will return the index of the array )</i><br>")
+           document.write(arr2);
+           b=arr2.indexOf(20);
+           document.write("<br>Searching index of 20<br>"+b);
+           document.write("<br>Searching index of 50<br>");
+           b=arr2.indexOf(50);
+           document.write(b);
+           document.write("<br>Gives -1 because 50 is not present in the array<br>");
+   
+           document.write("<br><i>includes(): ( to search if element exist in array like isarray() .)</i><br>")
+           document.write(arr2);
+           a=arr2.includes(10);
+           document.write("<br>Searching for 10 <br>" +a);
+           a=arr2.includes(40);
+           document.write("<br>Searching for 40 <br>" +a);
+        
+           document.write("<br><br><i>some(): checks if <strong>any</strong> value in array meets the criteria</i><br>")
+           var ages=[10,11,18,17,19,23];
+           document.write(ages);
+           var h= ages.some(checkAdult);
+           document.write("<br>"+h);
+           function checkAdult(age)
+           {
+             return age >= 18;
+
+           }
+        
+           document.write("<br><br><i>every(): checks if <strong> all </strong>value in array meets the criteria (age equal or above 18)</i><br>")
+           document.write(ages);
+           var h= ages.every(checkAdult);
+           document.write("<br>"+h);
+           var new_age=[25,20,18,19,30]
+           document.write("<br>"+new_age);
+           h= new_age.every(checkAdult);
+           document.write("<br>"+h);
+ 
+
+           document.write("<br><br><i>find(): returns first value that passes the test (age equal or above 18)</i><br>")
+           document.write(ages);
+           h=ages.find(checkAdult);
+           document.write("<br>"+h);
+
+           document.write("<br><br><i>findindex(): returns index of first value that passes the test in an array (age equal or above 18)</i><br>")
+           document.write(ages);
+           h=ages.findIndex(checkAdult);
+           document.write("<br>"+h);
+
+           document.write("<br><br><i>filter(): will create new array which pasases the criteria (age equal or above 18) </i><br>")
+           document.write(ages);
+           h=ages.filter(checkAdult);
+           document.write("<br>"+h);
+          
+
+           document.write("<br><br><i>toString():convert array to string </i><br>")
+           document.write(ages);
+           h=ages.toString();
+           document.write("<br>Now we can't perform any array functions on it since it is a string:"+h);
+
+           document.write("<br><br><i>forEach():will print values one by one.</i><br>")
+           document.write(arr);
+           h=arr.forEach(function(value)
+           {
+             document.write(value+"<br>")
+           })
+           
+           document.write("<br><i>map():Will create new array based on test(multiply all element with 10) </i><br>")
+           var ary=[2,4,6,8,10]
+           document.write(ary+"<br>");
+           b=ary.map(test);
+           function test(x){
+             return x*10;
+           }
+           document.write(b+"<br");
+          
+    </script>
+    <script>
+     <a href="string.html" target="_blank">Next</a>
+    </script>
+ 
+</body>
+
+</html>
+ 
